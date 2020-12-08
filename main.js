@@ -2,7 +2,9 @@ var xhr = new XMLHttpRequest();
 
 xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("data").innerHTML = this.responseText;
+        //console.log(typeof(JSON.parse(this.responseText)));// checking if its an object
+        //document.getElementById("data").innerHTML = this.responseText;// picking up data
+        console.log(JSON.parse(this.responseText)); //object logged to console
     }
 };
 
