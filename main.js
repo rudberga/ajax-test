@@ -18,6 +18,7 @@ xhr.onreadystatechange = function() {
     }
 };
 
+//TIMEOUTS
 setTimeout(function(){
     console.log(data);
 }, 500);
